@@ -1,0 +1,54 @@
+\documentclass[12pt]{report}
+
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{booktabs, multirow, soul, changepage, threeparttable}
+
+
+\graphicspath{{images/}}
+
+
+\titleformat{\chapter}[display]
+{\normalfont\Large\bfseries}{}{0pt}{\Huge \thechapter.\space}
+\titlespacing*{\chapter}{0pt}{-20pt}{40pt}
+
+
+\title{
+    \textbf{Jacobs University Bremen} \\
+    \vspace{1cm}
+    \textbf{Lab Report 3 - Filters} \\ 
+    Spring Semester 2023 \\
+}
+
+\author{
+    Author: \textbf{Idriz Pelaj} \\
+    \vspace{1cm} \\
+    Experiment Conducted By: \\ \textbf{Mr. Idriz Pelaj, Mr. Gabriel Marcanouni}
+}
+\date{Conducted on: \textbf{March 16, 2023}}
+
+\begin{document}
+
+\maketitle
+
+\chapter{Introduction}
+\input{chapters/Introduction.tex}
+
+\chapter{Execution}
+\input{chapters/Execution.tex}
+
+\chapter{Evaluation}
+\input{chapters/Evaluation.tex}
+
+\chapter{Conclusion}
+\input{chapters/Conclusion.tex}
+
+\chapter{References}
+\input{chapters/References.tex}
+
+\end{document}

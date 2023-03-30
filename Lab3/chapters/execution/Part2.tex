@@ -1,0 +1,30 @@
+To determine the properties of a band-pass filter, we had two possible RC combinations.
+One combination would lead to a high pass filter, and the other would lead to a low pass filter.
+
+We had two resistors, one of 82K$\Omega$ and one of 10.0K$\Omega$. We also had two capacitors, one of 1.5nF and one of 100nF.
+
+To determine the right combination, we used the formula for the cutoff frequency of a high and low pass filter:
+\begin{equation}
+    f_c = \frac{1}{2\pi RC}
+\end{equation}
+
+And plugging in the values for R=82K$\Omega$ and C=1.5nF, we get:
+\begin{equation}
+    f_c = \frac{1}{2\pi \cdot 82K\Omega \cdot 1.5nF} = 12939.42\text{Hz}
+\end{equation}
+
+Which is the low pass filter, as the cutoff frequency is the greatest out of all the other combinations.
+
+
+And plugging in the values for R=10K$\Omega$ and C=100nF, we get:
+\begin{equation}
+    f_c = \frac{1}{2\pi \cdot 10K\Omega \cdot 100nF} = 159.15\text{Hz}
+\end{equation}
+
+Which is the high pass filter, as the cutoff frequency is the smallest out of all the other combinations.
+
+
+We use a sine signal with a 5Vpp amplitude without an offset at the function generator. We vary the frequency of the generator from 50Hz all the way to 100kHz.
+We use the oscilloscope to measure the input and output amplitude, and we record the following values:
+
+\input{tables/part_2_table.tex}

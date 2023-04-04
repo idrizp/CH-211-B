@@ -46,6 +46,36 @@ To obtain the amplitude and phase of the output signal, we use the following equ
     |\underline{A}| = \frac{1}{\sqrt{1 + (\omega RC)^2}} \text{ and } \phi = -\arctan(\omega RC)
 \end{equation}
 
+\section{Hi-Pass}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.75]{images/hi_pass_filter.png}
+    \caption{High Pass Filter}
+\end{figure}
+
+A high pass filter allows higher frequencies to pass through and attenuates lower frequencies.
+It can be designed using a resistor and a capacitor, or an inductor and a resistor.
+
+The transfer function is described by:
+\begin{equation}
+    \underline{A} = \frac{1}{1+\frac{1}{j \omega RC}}
+\end{equation}
+
+The amplitude is described by:
+\begin{equation}
+    \underline{|A|} = \frac{1}{\sqrt{1+\frac{1}{\left({\omega RC}\right)^2}}}
+\end{equation}
+
+And the phase is described by:
+\begin{equation}
+    \phi = \arctan(\frac{1}{\omega RC})
+\end{equation}
+
+To find the cutoff frequency for both the low pass and high pass filter for an RC circuit, we use the following relation:
+\begin{equation}
+    f_{-3dB} = \frac{1}{2 \pi RC}
+\end{equation}
+
 \section{Band-Pass}
 \begin{figure}[H]
     \centering

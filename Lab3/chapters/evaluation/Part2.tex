@@ -110,11 +110,16 @@ To obtain the Nyquist plot of the band-pass filter, we multiply the transfer fun
     U_R(\omega) = (H_{lo}(j\omega) \cdot H_{hi}(j\omega)) \cdot V_{in}
 \end{equation}
 
+\begin{equation}
+    U_R(\omega) = \frac{1}{\left(C_1 \cdot R_1 \cdot j\omega+1\right)\,\left(\frac{1}{C_2 \cdot R_{2} \cdot j\omega}+1\right)}V_{in}
+\end{equation}
+
+Where we have established that $\omega = 2\pi f$.
 
 The nyquist plot is then drawn using MATLAB.
 
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.3]{images/nyquist_plot_bandpass.jpg}
-    \caption{Nyquist plot of the bandpass filter, composed of the transfer function of the high pass filter and the low pass filter.}
+    \caption{Nyquist plot of the bandpass filter, composed of the transfer function of the high pass filter and the low pass filter. Found using MATLAB's nyquist function with the combined transfer functions of the low and high pass filter, with the frequencies we have tested ranging from 50Hz to 100kHz.}
 \end{figure}

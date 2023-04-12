@@ -20,6 +20,12 @@ Below are the results of the band-pass filter. The measured frequencies and ampl
         \caption{The measured input voltage, output voltage, phase, and amplitude ratio in dB}
     \end{threeparttable}\end{adjustwidth}
 
+The measured amplitude in decibels is found by using the relation:
+\begin{equation}
+    |A_{dB}| = 20\log_{10}\left(\frac{V_{out}}{V_{in}}\right)
+\end{equation}
+
+
 \pagebreak
 We then plot the frequency response on the bode plot as shown below:
 
@@ -44,6 +50,27 @@ To combine these results, the low and high amplitudes are multiplied, and the ph
 
 
 \(|A_{total}| = |A_{hi}| * |A_{lo}|\) and \(\phi_{total} = \phi_{hi} + \phi_{lo}\)
+
+
+\begin{adjustwidth}{-2.5 cm}{-2.5 cm}\centering\begin{threeparttable}[!htb]
+        \scriptsize
+        \begin{tabular}{lrrr}\toprule
+            \textbf{Phase(in deg)} & \textbf{Frequency(in Hz)} & \textbf{Amplitude(in dB)} \\\midrule
+            72.34                  & 50                        & -10.47                    \\
+            57.42                  & 100                       & -5.48                     \\
+            37.63                  & 200                       & -2.13                     \\
+            15.44                  & 500                       & -0.43                     \\
+            4.62                   & 1000                      & -0.13                     \\
+            -4.24                  & 2000                      & -0.13                     \\
+            -19.30                 & 5000                      & -0.61                     \\
+            -36.79                 & 10000                     & -2.03                     \\
+            -56.64                 & 20000                     & -5.30                     \\
+            -75.31                 & 50000                     & -12.02                    \\
+            -82.54                 & 100000                    & -17.83                    \\
+            \bottomrule
+        \end{tabular}
+        \caption{The table of calculated phase and amplitudes from the nominal values, using the formulas above.}
+    \end{threeparttable}\end{adjustwidth}
 
 Using this methodology, we can compose a graph of calculated amplitude and phase values and compare it to our measured values.
 
